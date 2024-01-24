@@ -1,0 +1,11 @@
+/* 要素の基本設定。elementに対するcssは基本ここに記入 */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", noto-sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
