@@ -1,0 +1,35 @@
+/* Colors */
+:root {
+  --color-primary: #DE879E;
+  --color-secondary: #FCEDD5;
+  --color-base: #433333;
+  --color-text: var(--color-base);
+}
+
+/* Spacing */
+:root {
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+}
+
+/* BrakePoints */
+:root {
+  --sp: 576px;
+  --tablet: 768px;
+  --pc: 992px;
+}
+
+/* FontSize */
+:root {
+  --base-font-size: 1rem;
+  --font-size-xs: calc(10 / var(--base-font-size));
+  --font-size-sm: calc(12 / var(--base-font-size));
+  --font-size-normal: var(--base-font-size);
+  --font-size-md: calc(18 / var(--base-font-size));
+  --font-size-lg: calc(22 / var(--base-font-size));
+  --font-size-xl: calc(24 / var(--base-font-size));
+  --font-size-xxl: calc(32 / var(--base-font-size));
+}
