@@ -1,6 +1,7 @@
 .navigations {
   .gnav {
     padding: var(--space-sm);
+    margin-bottom: var(--space-lg);
     width: 100%;
 
     .list__item {
