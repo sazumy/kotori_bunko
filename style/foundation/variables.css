@@ -1,8 +1,11 @@
 /* Colors */
+/* cssにはlighten() darken()などのプロパティはないので、ここ（http://scg.ar-ch.org/）で色を作って直接指定している */
 :root {
   --color-primary: #DE879E;
+  --color-primary-light: #eec3cf; /* lighten(#DE879E, 15%) */
   --color-secondary: #FCEDD5;
   --color-base: #433333;
+  --color-base-lightest: #fbfafa; /* lighten(#433333, 75%) */
   --color-text: var(--color-base);
 }
 
@@ -25,12 +28,12 @@
 
 /* FontSize */
 :root {
-  --base-font-size: 1rem;
-  --font-size-xs: calc(10 / var(--base-font-size));
-  --font-size-sm: calc(12 / var(--base-font-size));
-  --font-size-normal: var(--base-font-size);
-  --font-size-md: calc(18 / var(--base-font-size));
-  --font-size-lg: calc(22 / var(--base-font-size));
-  --font-size-xl: calc(24 / var(--base-font-size));
-  --font-size-xxl: calc(32 / var(--base-font-size));
+  --base-font-size: 16;
+  --font-size-xs: calc(1rem * 12 / var(--base-font-size));
+  --font-size-sm: calc(1rem * 14 / var(--base-font-size));
+  --font-size-normal: 1rem;
+  --font-size-md: calc(1rem * 18 / var(--base-font-size));
+  --font-size-lg: calc(1rem * 22 / var(--base-font-size));
+  --font-size-xl: calc(1rem * 24 / var(--base-font-size));
+  --font-size-xxl: calc(1rem * 32 / var(--base-font-size));
 }
