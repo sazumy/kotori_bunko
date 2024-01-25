@@ -19,7 +19,7 @@
     justify-content: space-between;
     
     .navigations {
-      /* display: none; */
+      display: none;
     }
 
     .navigations-button {
