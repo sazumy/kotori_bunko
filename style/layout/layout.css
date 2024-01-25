@@ -1,0 +1,9 @@
+/* 要素のレイアウトに関する項目 */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: var(--pc)) {
+    max-width: 1000px;
+  }
+}

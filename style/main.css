@@ -4,4 +4,6 @@
 @import url("./foundation/variables.css");
 @import url("./foundation/base.css");
 
+@import url("./layout/layout.css");
+
 @import url("./object/header.css");
