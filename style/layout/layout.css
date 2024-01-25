@@ -18,11 +18,11 @@
     display: flex;
     justify-content: space-between;
     
-    .gnav {
+    .navigations {
       /* display: none; */
     }
 
-    .gnav-button {
+    .navigations-button {
       @media screen and (min-width: 992px) {
         display: none;
       }
