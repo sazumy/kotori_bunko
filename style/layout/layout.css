@@ -18,11 +18,11 @@
     display: flex;
     justify-content: space-between;
     
-    .navigations {
+    .dropdown {
       display: none;
     }
 
-    .navigations-button {
+    .dropdown-button {
       @media screen and (min-width: 992px) {
         display: none;
       }

@@ -1,5 +1,5 @@
-.navigations {
-  .gnav {
+
+  .gnav, .gnav-pc {
     padding: var(--space-sm);
     margin-bottom: var(--space-lg);
     width: 100%;
@@ -30,7 +30,7 @@
     }
   }
 
-  .icons {
+  .gnav-icons {
     display: flex;
     gap: var(--space-lg);
     justify-content: center;
@@ -39,4 +39,4 @@
       display: inline-block;
     }
   }
-}
+
