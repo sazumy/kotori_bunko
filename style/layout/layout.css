@@ -13,7 +13,7 @@
 .header {
   padding: var(--space-md);
   width: 100%;
-  
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -39,5 +39,17 @@
 
 /* Footer */
 .footer {
-  
+  padding: var(--space-md);
+  width: 100%;
+
+  .container {
+    .main-info {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .copy {
+      text-align: center;
+    }
+  }
 }
