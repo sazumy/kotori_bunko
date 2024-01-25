@@ -1,0 +1,30 @@
+.gnav {
+  .list {
+    padding: var(--space-sm);
+    width: 100%;
+
+    .list__item {
+      display: inline-block;
+      font-family: ta-kotodama-r;
+      line-height: 1.2;
+      text-align: center;
+      width: 100%;
+
+      .en {
+        color: var(--color-primary-light);
+        font-family: 'Gill Sans';
+        font-size: var(--font-size-sm);
+        font-weight: 900;
+      }
+
+      .list__item--link {
+        display: block;
+        padding: var(--space-xs);
+
+        &:hover {
+          background-color: var(--color-base-lightest);
+        }
+      }
+    }
+  }
+}

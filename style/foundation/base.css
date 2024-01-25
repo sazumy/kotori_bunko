@@ -5,6 +5,7 @@
 }
 
 body {
+  color: var(--color-text);
   font-family: "Gill Sans", noto-sans, sans-serif;
   font-size: 16px;
   line-height: 1.7;
