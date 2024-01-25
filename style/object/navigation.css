@@ -18,12 +18,17 @@
       }
 
       .list__item--link {
+        border-bottom: solid 1px var(--color-base-lightest);
         display: block;
         padding: var(--space-xs);
 
         &:hover {
           background-color: var(--color-base-lightest);
         }
+      }
+
+      .icons {
+        
       }
     }
   }
