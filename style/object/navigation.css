@@ -26,10 +26,16 @@
           background-color: var(--color-base-lightest);
         }
       }
+    }
+  }
 
-      .icons {
-        
-      }
+  .icons {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: center;
+    
+    .list__item {
+      display: inline-block;
     }
   }
 }
