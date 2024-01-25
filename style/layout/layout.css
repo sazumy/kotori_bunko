@@ -11,7 +11,7 @@
 /* 以下、記載量が増えたら header footerなどのファイルに分ける */
 /* Header */
 .header {
-  padding: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
   width: 100%;
 
   .container {
@@ -35,6 +35,13 @@
       }
     }
   }
+}
+
+.keyvis {
+  background-image: url("../../images/keyvis.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 510px;
 }
 
 /* Footer */
