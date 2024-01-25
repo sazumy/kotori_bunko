@@ -1,5 +1,5 @@
 /* 要素のレイアウトに関する項目 */
-
+/* 全要素共通 */
 .container {
   width: 100%;
   margin: 0 auto;
@@ -8,30 +8,36 @@
   }
 }
 
-/* 記載量が増えたら header footerなどのファイルに分ける */
+/* 以下、記載量が増えたら header footerなどのファイルに分ける */
+/* Header */
 .header {
-  display: flex;
-  justify-content: space-between;
   padding: var(--space-md);
+  width: 100%;
   
-  .gnav {
-    display: none;
-  }
-
-  .gnav-button {
-    @media screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    
+    .gnav {
       display: none;
     }
-  }
 
-  .gnav-pc {
-    display: none;
-    @media screen and (min-width: 992px) {
-      display: block;
+    .gnav-button {
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+    }
+
+    .gnav-pc {
+      display: none;
+      @media screen and (min-width: 992px) {
+        display: block;
+      }
     }
   }
 }
 
+/* Footer */
 .footer {
   
 }
