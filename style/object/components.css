@@ -4,10 +4,13 @@
   --card-padding: var(--space-xs);
   max-width: calc(var(--img-size) + var(--card-padding) * 2);
   padding: var(--card-padding);
+
   .card__img {
+    /* TODO: 292pxがマジックナンバーなのでなんとかしたい */
+    min-width: 292px;
     margin-bottom: var(--space-xs);
     img {
-      max-width: 100%;
+      width: 100%;
     }
   }
 }
