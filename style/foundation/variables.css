@@ -34,8 +34,8 @@
   --font-size-normal: 1rem;
   --font-size-md: calc(1rem * 18 / var(--base-font-size));
   --font-size-lg: calc(1rem * 22 / var(--base-font-size));
-  --font-size-xl: calc(1rem * 24 / var(--base-font-size));
-  --font-size-xxl: calc(1rem * 32 / var(--base-font-size));
+  --font-size-xl: calc(1rem * 32 / var(--base-font-size));
+  --font-size-xxl: calc(1rem * 48 / var(--base-font-size));
 }
 
 /* ぐにゃぐにゃした丸い円 */
