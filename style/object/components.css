@@ -5,6 +5,7 @@
   max-width: calc(var(--img-size) + var(--card-padding) * 2);
   padding: var(--card-padding);
   .card__img {
+    margin-bottom: var(--space-xs);
     img {
       max-width: 100%;
     }
@@ -13,8 +14,8 @@
 
 h2, .h2 {
   font-family: ta-kotodama-r;
-  font-size: var(--font-size-lg);
-  line-height: 1.2;
+  font-size: var(--font-size-xl);
+  line-height: 1;
   margin-bottom: var(--space-md);
   text-align: center;
   .en {
@@ -24,6 +25,12 @@ h2, .h2 {
     font-size: var(--font-size-md);
     font-weight: 900;
   }
+}
+
+h3, .h3 {
+  font-size: var(--font-size-lg);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
 }
 
 .rough-circle {
