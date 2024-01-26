@@ -46,6 +46,12 @@
   @media screen and (min-width: 992px) {
     background-position: center;
   }
+
+  .eye-catch {
+    --eye-catch-size: 200px;
+    height: var(--eye-catch-size);
+    width: var(--eye-catch-size);
+  }
 }
 
 /* Footer */
