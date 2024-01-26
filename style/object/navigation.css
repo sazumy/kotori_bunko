@@ -13,6 +13,7 @@
       width: 100%;
 
       .en {
+        /* NOTE: h2とほぼ同じcssを書いているので共通化したい */
         color: var(--color-primary-light);
         font-family: 'Gill Sans';
         font-size: var(--font-size-sm);
