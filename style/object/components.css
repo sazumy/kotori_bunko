@@ -1,0 +1,12 @@
+.rough-circle {
+  /* ぐにゃぐにゃした丸い円 */
+  align-items: center;
+  background: var(--color-secondary);
+  border-radius: 41% 59% 58% 42% / 41% 43% 57% 59%;
+  display: flex;
+  font-family: ta-kotodama-r;
+  font-size: var(--font-size-lg);
+  height: 100%;
+  justify-content: flex-end;
+  width: 100%;
+}
