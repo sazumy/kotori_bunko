@@ -1,5 +1,6 @@
-
-  .gnav, .gnav-pc {
+.gnav {
+  .list {
+    /* PCとSPのgnavに共通のスタイル */
     padding: var(--space-sm);
     margin-bottom: var(--space-lg);
     width: 100%;
@@ -27,16 +28,29 @@
           background-color: var(--color-base-lightest);
         }
       }
+
+      .icons {
+        display: flex;
+        gap: var(--space-lg);
+        justify-content: center;
+        
+        .list__item {
+          display: inline-block;
+        }
+      }
     }
   }
 
-  .gnav-icons {
-    display: flex;
-    gap: var(--space-lg);
-    justify-content: center;
-    
-    .list__item {
-      display: inline-block;
+  /* 以下、PC版のgnavのみ */
+  &.pc {
+    .list {
+      display: flex;
+      gap:var(--space-sm);
+      margin-bottom: 0;
+      padding: 0;
+      text-wrap: nowrap;
     }
   }
+}
+
 

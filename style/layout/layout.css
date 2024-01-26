@@ -18,17 +18,17 @@
     display: flex;
     justify-content: space-between;
     
-    .dropdown {
+    .gnav {
       display: none;
     }
 
-    .dropdown-button {
+    .gnav-dropdown-button {
       @media screen and (min-width: 992px) {
         display: none;
       }
     }
 
-    .gnav-pc {
+    .gnav.pc {
       display: none;
       @media screen and (min-width: 992px) {
         display: block;
