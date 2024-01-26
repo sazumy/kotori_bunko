@@ -7,6 +7,7 @@
 
   .card__img {
     /* TODO: 292pxがマジックナンバーなのでなんとかしたい */
+    /* TODO: この設定だとスマホ版の時にカード間に妙な余白ができる */
     min-width: 292px;
     margin-bottom: var(--space-xs);
     img {
