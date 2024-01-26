@@ -28,16 +28,16 @@
           background-color: var(--color-base-lightest);
         }
       }
-
-      .icons {
-        display: flex;
-        gap: var(--space-lg);
-        justify-content: center;
-        
-        .list__item {
-          display: inline-block;
-        }
-      }
+    }
+  }
+  
+  .icons {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: center;
+    
+    .list__item {
+      display: inline-block;
     }
   }
 
