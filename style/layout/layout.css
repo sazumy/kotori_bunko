@@ -19,7 +19,7 @@
     justify-content: space-between;
     
     .gnav {
-      /* display: none; */
+      display: none;
     }
 
     .gnav-dropdown-button {
