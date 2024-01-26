@@ -40,6 +40,7 @@
 /* about */
 .about {
   padding: var(--space-lg) 0;
+  margin-bottom: var(--space-xl);
   .cards {
     align-items: center;
     display: flex;
@@ -48,11 +49,19 @@
     padding: 0 var(--space-sm);
 
     @media screen and (min-width: 992px) {
+      align-items: flex-start;
       flex-direction: row;
     }
     
   }
 }
+
+/* Voice */
+.voice {
+  background-image: url(../../images/paper_01.jpg);
+  padding: var(--space-xl) 0;
+}
+
 /* Footer */
 .footer {
   padding: var(--space-md);
