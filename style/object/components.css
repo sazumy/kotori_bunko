@@ -17,6 +17,20 @@
   }
 }
 
+h2, .h2 {
+  font-family: ta-kotodama-r;
+  font-size: var(--font-size-lg);
+  line-height: 1.2;
+  text-align: center;
+  .en {
+    /* NOTE: gnavとほぼ同じcssを書いているので共通化したい */
+    color: var(--color-primary-light);
+    font-family: 'Gill Sans';
+    font-size: var(--font-size-md);
+    font-weight: 900;
+  }
+}
+
 .rough-circle {
   /* ぐにゃぐにゃした丸い円 */
   background: var(--color-secondary);
