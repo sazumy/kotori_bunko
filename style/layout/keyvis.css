@@ -1,0 +1,54 @@
+.keyvis {
+  background-image: url("../../images/keyvis.jpg");
+  background-position: 65% 0;
+  background-size: cover;
+  height: 510px;
+  margin-bottom: var(--space-xl);
+  position: relative;
+
+  @media screen and (min-width: 992px) {
+    background-position: center;
+  }
+
+  .eye-catch {
+    --eye-catch-size: 200px;
+    height: var(--eye-catch-size);
+    position: relative;
+    left: 5%;
+    top: 55%;
+    width: var(--eye-catch-size);
+
+    @media screen and (min-width: 768px) {
+      --eye-catch-size: 340px;
+      left: 15%;
+      top: 25%;
+    }
+
+    .rough-circle {
+      position: absolute;
+    }
+  }
+
+  .arrow_scroll {
+    bottom: -15%;
+    position: absolute;
+    right: 10%;
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  .scroll-sign {
+    display: none;
+    
+    @media screen and (min-width: 992px) {
+      background: var(--color-primary);
+      bottom: -15%;
+      display: inline-block;
+      height: 150px;
+      left: 50%;
+      position: absolute;
+      width: 2px;
+    }
+  }
+}
