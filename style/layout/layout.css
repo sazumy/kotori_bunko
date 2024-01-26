@@ -23,14 +23,14 @@
     }
 
     .gnav-dropdown-button {
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: 768px) {
         display: none;
       }
     }
 
     .gnav.pc {
       display: none;
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: 768px) {
         display: block;
       }
     }
