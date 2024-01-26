@@ -1,18 +1,31 @@
 /* 色々な場所で使い回すスタイル */
-.card {
-  /* voiceも含めるとカードのコーディングうまく行っていないのでやり直し */
-  --img-size: 320px;
-  --card-padding: var(--space-xs);
-  max-width: calc(var(--img-size) + var(--card-padding) * 2);
-  padding: var(--card-padding);
+.cards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm) var(--space-md);
 
-  .card__img {
-    /* TODO: 292pxがマジックナンバーなのでなんとかしたい */
-    /* TODO: この設定だとスマホ版の時にカード間に妙な余白ができる */
-    min-width: 292px;
-    margin-bottom: var(--space-xs);
-    img {
-      width: 100%;
+  @media screen and (min-width: 992px) {
+    align-items: stretch;
+    flex-direction: row;
+  }
+  
+  .card {
+    --img-width: 320px;
+    --card-side-padding: var(--space-xs);
+
+    background: var(--color-white);
+    max-width: calc(var(--img-width) + var(--card-side-padding) * 2);
+    padding: var(--card-padding);
+  
+    .card__img {
+      max-width: 100%;
+      margin-bottom: var(--space-xs);
+      img {
+        /* TODO: テキスト量により写真の高さが一定にならず、マジックナンバーになってしまっているので直したい */
+        height: 240px;
+        width: 100%;
+      }
     }
   }
 }
