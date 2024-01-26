@@ -36,7 +36,13 @@
 
   /* 横に長いタイプのcard */
   &.long {
+    gap: 0;
     padding: 0 var(--cards-side-padding);
+
+    @media screen and (min-width: 992px) {
+      flex-direction: column;
+    }
+
     .card {
       align-items: center;
       display: flex;
@@ -44,12 +50,29 @@
       padding: var(--space-md) var(--space-sm);
       max-width: 100%;
 
-      .card__img {
-        max-width: 240px;
+      @media screen and (min-width: 992px) {
+        flex-direction: row;
       }
 
-      .card__title {
+      .card__img {
+        margin-bottom: var(--space-lg);
+        max-width: 240px;
 
+        @media screen and (min-width: 992px) {
+          margin-left: var(--space-lg);
+        }
+      }
+
+      .card__contents {
+        @media screen and (min-width: 992px) {
+          margin-left: var(--space-xl);
+        }
+      }
+
+      &:first-child {
+        .rough-circle {
+          background: var(--color-primary-light);
+        }
       }
     }
   }
