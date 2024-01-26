@@ -27,6 +27,7 @@
       max-width: 100%;
       margin-bottom: var(--space-sm);
       text-align: center;
+
       img {
         height: 100%;
       }
@@ -37,8 +38,19 @@
   &.long {
     padding: 0 var(--cards-side-padding);
     .card {
-      padding: var(--space-sm) var(--space-xs);
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-md) var(--space-sm);
       max-width: 100%;
+
+      .card__img {
+        max-width: 240px;
+      }
+
+      .card__title {
+
+      }
     }
   }
 }
@@ -62,6 +74,21 @@ h3, .h3 {
   font-size: var(--font-size-lg);
   line-height: 1;
   margin-bottom: var(--space-sm);
+  width: 100%;
+
+  &.border {
+    margin-bottom: var(--space-md);
+    position: relative;
+
+    &::before {
+      border-bottom: solid 2px var(--color-primary);
+      bottom: calc(-1 * var(--space-xs));
+      content: '';
+      display: block;
+      position: absolute;
+      width: 32px;
+    }
+  }
 }
 
 .rough-circle {
