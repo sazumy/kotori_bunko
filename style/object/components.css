@@ -1,23 +1,4 @@
 /* 色々な場所で使い回すスタイル */
-.eye-catch {
-  .rough-circle {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    text-wrap: nowrap;
-
-    .copy {
-      font-family: ta-kotodama-r;
-      font-size: var(--font-size-lg);
-
-      @media screen and (min-width: 768px) {
-        font-size: var(--font-size-xxl);
-        line-height: 1.5;
-      }
-    }
-  }
-}
-
 h2, .h2 {
   font-family: ta-kotodama-r;
   font-size: var(--font-size-lg);
@@ -41,15 +22,3 @@ h2, .h2 {
   width: 100%;
 }
 
-.rough-circle-shadow {
-  --shadow-size: 105%;
-  background: repeating-linear-gradient(-45deg, var(--color-secondary) 0px 3px, transparent 3px 6px);
-  border-radius: var(--rough-border-radius);
-  height: var(--shadow-size);
-  width: var(--shadow-size);
-
-  /* タブレットサイズ以上で変化 */
-  @media screen and (min-width: 768px) {
-    --shadow-size: 110%;
-  }
-}
