@@ -39,9 +39,13 @@
 
 .keyvis {
   background-image: url("../../images/keyvis.jpg");
-  background-position: center;
+  background-position: 65% 0;
   background-size: cover;
   height: 510px;
+  
+  @media screen and (min-width: 992px) {
+    background-position: center;
+  }
 }
 
 /* Footer */
