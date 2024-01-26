@@ -37,3 +37,8 @@
   --font-size-xl: calc(1rem * 24 / var(--base-font-size));
   --font-size-xxl: calc(1rem * 32 / var(--base-font-size));
 }
+
+/* ぐにゃぐにゃした丸い円 */
+:root {
+  --rough-border-radius: 41% 59% 58% 42% / 41% 43% 57% 59%;
+}

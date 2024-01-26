@@ -50,7 +50,14 @@
   .eye-catch {
     --eye-catch-size: 200px;
     height: var(--eye-catch-size);
+    position: relative;
+    left: 5%;
+    top: 55%;
     width: var(--eye-catch-size);
+
+    .rough-circle {
+      position: absolute;
+    }
   }
 }
 
