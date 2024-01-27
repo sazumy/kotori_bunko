@@ -49,6 +49,11 @@
   padding: var(--space-xl) 0;
 }
 
+/* Access */
+.access {
+  background-image: url(../../images/paper_01.jpg);
+  padding: var(--space-xl) 0;
+}
 /* Footer */
 .footer {
   padding: var(--space-md);
