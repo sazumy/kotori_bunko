@@ -84,13 +84,15 @@
 
 /* Footer */
 .footer {
-  padding: var(--space-md);
+  background: var(--color-primary);
+  padding: var(--space-xl);
   width: 100%;
 
   .container {
     .main-info {
       display: flex;
       justify-content: space-between;
+      margin-bottom: var(--space-md);
     }
 
     .copy {

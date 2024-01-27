@@ -98,3 +98,19 @@
     margin-bottom: var(--space-lg);
   }
 }
+
+/* Footer */
+.footer {
+  .contact-info {
+    .address {
+      margin-bottom: var(--space-sm);
+    }
+    .icons {
+      display: flex;
+      .list__item {
+        display: inline-block;
+        margin-right: var(--space-sm);
+      }
+    }
+  }
+}
