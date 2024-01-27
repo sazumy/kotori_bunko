@@ -53,6 +53,17 @@
 .access {
   background-image: url(../../images/paper_01.jpg);
   padding: var(--space-xl) 0;
+
+  /* NOTE: この記述、projectの方が良いかも？後で検討 */
+  .info {
+    margin-bottom: var(--space-md);
+    padding: 0 var(--space-sm);
+    text-align: center;
+  }
+
+  .map {
+    height: 560px;
+  }
 }
 /* Footer */
 .footer {
