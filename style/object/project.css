@@ -10,6 +10,17 @@
   }
 
   .gnav {
+
+    .gnav-close-btn {
+      padding: var(--space-xs);
+      text-align: right;
+      img {
+        --icon-size: 40px;
+        height: var(--icon-size);
+        width: var(--icon-size);
+      }
+    }
+
     .list {
       /* PCとSPのgnavに共通のスタイル */
       padding: var(--space-sm);
