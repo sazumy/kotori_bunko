@@ -15,26 +15,44 @@
 /* Header */
 .header {
   padding: var(--space-sm) var(--space-md);
+  padding-bottom: 0;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: var(--space-sm);
+  }
 
   .container {
     display: flex;
     justify-content: space-between;
-    
-    .gnav {
-      display: none;
-    }
 
-    .gnav-dropdown-button {
-      @media screen and (min-width: 768px) {
+    .right-content {
+      position: relative;
+
+      .gnav {
+        background: var(--color-white);
         display: none;
+        min-width: 200px;
       }
-    }
 
-    .gnav.pc {
-      display: none;
-      @media screen and (min-width: 768px) {
+      .gnav.show {
         display: block;
+        position: absolute;
+        right: calc(-1 * var(--space-md));
+        z-index: 1;
+      }
+
+      .gnav-dropdown-button {
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
+      }
+
+      .gnav.pc {
+        display: none;
+        @media screen and (min-width: 768px) {
+          display: block;
+        }
       }
     }
   }
