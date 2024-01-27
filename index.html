@@ -7,19 +7,8 @@
 
   <meta name="description" content="JR南武線〇〇駅にある絵本だけの小さな図書館です。おひとり様３冊まで貸し出し可能。毎週水曜日の14時から17時まで開館しています。どなたでもお気軽にご利用ください。">
   <link rel="stylesheet" type="text/css" href="./style/main.css">
-
-  <!-- JSファイル作ったら移動したい -->
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'ktg1tyu',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
-
+  <script src="./script/index.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwPAKFKnEgo_OSkPILXoW5eF1lD_Za5aw&callback=console.debug&libraries=maps,marker&v=beta"></script>
 </head>
 <body>
   <article>
@@ -215,7 +204,9 @@
       </div>
 
       <div class="map">
-        ここにGoogleMapが入ります
+        <gmp-map center="35.57247543334961,139.66781616210938" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="35.57247543334961,139.66781616210938" title="My location"></gmp-advanced-marker>
+        </gmp-map>
       </div>
     </section>
 
