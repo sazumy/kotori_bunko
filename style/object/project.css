@@ -1,6 +1,14 @@
 /* 特定の箇所でしか使わないスタイル */
 /* Header */
 .header {
+  @media screen and (min-width: 768px) {
+    .logo {
+      img {
+        height: 110%;
+      }
+    }
+  }
+
   .gnav {
     .list {
       /* PCとSPのgnavに共通のスタイル */
