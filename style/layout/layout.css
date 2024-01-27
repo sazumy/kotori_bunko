@@ -42,7 +42,7 @@
         z-index: 1;
       }
 
-      .gnav-dropdown-button {
+      .gnav-dropdown-btn {
         @media screen and (min-width: 768px) {
           display: none;
         }
