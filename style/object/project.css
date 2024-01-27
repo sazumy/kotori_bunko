@@ -33,3 +33,49 @@
     }
   }
 }
+
+/* FAQ */
+.faq {
+   /* TODO: タブレットより大きいサイズでのテキストの配置に違和感があるので修正したい */
+  .item {
+    margin-bottom: var(--space-sm);
+    padding: 0 var(--space-sm);
+
+    .question, .answer {
+      align-items: center;
+      display: flex;
+
+      .icon {
+        color: var(--color-primary);
+        font-size: var(--font-size-xl);
+        font-weight: 700;
+        margin-right: var(--space-md);
+      }
+      .text {
+        flex-grow: 1;
+      }
+    }
+
+    .question {
+      font-weight: bold;
+    }
+    .answer {
+      .icon {
+        color: var(--color-primary-light);
+      }
+    }
+  }
+
+  .hidden-content {
+    display: none;
+  }
+
+  .viewmore {
+    /* TODO: アイコンとテキストがずれているので直したい */
+    position: relative;
+    text-align: center;
+    img {
+      margin-right: 4px;
+    }
+  }
+}
