@@ -1,4 +1,63 @@
 /* 特定の箇所でしか使わないスタイル */
+/* Header */
+.header {
+  .gnav {
+    .list {
+      /* PCとSPのgnavに共通のスタイル */
+      padding: var(--space-sm);
+      margin-bottom: var(--space-lg);
+      width: 100%;
+  
+      .list__item {
+        display: inline-block;
+        font-family: ta-kotodama-r;
+        line-height: 1.2;
+        text-align: center;
+        width: 100%;
+  
+        .en {
+          /* NOTE: h2とほぼ同じcssを書いているので共通化したい */
+          color: var(--color-primary-light);
+          font-family: 'Gill Sans';
+          font-size: var(--font-size-sm);
+          font-weight: 900;
+        }
+  
+        .list__item--link {
+          border-bottom: solid 1px var(--color-base-lightest);
+          display: block;
+          padding: var(--space-xs);
+  
+          &:hover {
+            background-color: var(--color-base-lightest);
+          }
+        }
+      }
+    }
+    
+    .icons {
+      display: flex;
+      gap: var(--space-lg);
+      justify-content: center;
+      
+      .list__item {
+        display: inline-block;
+      }
+    }
+  
+    /* 以下、PC版のgnavのみ */
+    &.pc {
+      .list {
+        display: flex;
+        gap:var(--space-sm);
+        margin-bottom: 0;
+        padding: 0;
+        text-wrap: nowrap;
+      }
+    }
+  }
+  
+}
 /* keyvis */
 .keyvis {
   .eye-catch {
@@ -101,12 +160,20 @@
 
 /* Footer */
 .footer {
+
+  .footer-nav {
+    .list-item {
+      margin-bottom: var(--space-xs);
+    }
+  }
+
   .contact-info {
     .address {
       margin-bottom: var(--space-sm);
     }
     .icons {
       display: flex;
+
       .list__item {
         display: inline-block;
         margin-right: var(--space-sm);
