@@ -59,7 +59,7 @@
 
   /* NOTE: この記述、projectの方が良いかも？後で検討 */
   .info {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-lg);
     padding: 0 var(--space-sm);
     text-align: center;
   }
@@ -73,6 +73,13 @@
 .faq {
   background-image: var(--bg-paper-url);
   padding: var(--space-xl) 0;
+  margin-bottom: var(--space-xl);
+}
+
+/* Contact */
+.contact {
+  padding: var(--space-lg) 0;
+  margin-bottom: var(--space-lg);
 }
 
 /* Footer */
