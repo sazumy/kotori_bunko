@@ -254,7 +254,7 @@
 
           <!-- ここから先、通常だと隠れているコンテンツ -->
           
-          <div class="hidden-content">
+          <div class="hidden-content" id="js-hidden-content">
             <div class="item">
               <p class="question">
                 <span class="icon">Q</span>
@@ -267,11 +267,17 @@
             </div>
           </div>
           
-          <p class="viewmore">
-            <img src="./images/icon_arrow_down.svg" alt="">
+          <p class="viewmore show" id="js-view-more-btn">
+            <img src="./images/icon_arrow_down.svg" alt="矢印のアイコン">
             もっと見る
           </p>
         </div>
+
+        <p class="viewless" id="js-view-less-btn">
+          <img src="./images/icon_arrow_down.svg" alt="">
+          少なく表示
+        </p>
+      </div>
       </div>
     </section>
 
