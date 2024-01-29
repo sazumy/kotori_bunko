@@ -24,7 +24,7 @@
     .list {
       /* PCとSPのgnavに共通のスタイル */
       padding: var(--space-sm);
-      margin-bottom: var(--space-lg);
+      margin-bottom: var(--space-md);
       width: 100%;
   
       .list__item {
@@ -45,7 +45,7 @@
         .list__item--link {
           border-bottom: solid 1px var(--color-base-lightest);
           display: block;
-          padding: var(--space-xs);
+          padding: var(--space-sm);
   
           &:hover {
             background-color: var(--color-base-lightest);
@@ -56,8 +56,9 @@
     
     .icons {
       display: flex;
-      gap: var(--space-lg);
+      gap: var(--space-md);
       justify-content: center;
+      margin-bottom: var(--space-lg);
       
       .list__item {
         display: inline-block;

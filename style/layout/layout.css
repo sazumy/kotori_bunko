@@ -39,6 +39,7 @@
         display: block;
         position: absolute;
         right: calc(-1 * var(--space-md));
+        top: calc(-1 * var(--space-sm));
         z-index: 1;
       }
 
