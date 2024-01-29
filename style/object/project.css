@@ -175,7 +175,7 @@
 
         /* NOTE: このセクションに特有の部分 */
         content: url('../../images/silhouette_bird_03.svg');
-        left: -80px;
+        left: -56px;
         top: -16px;
       }
     }
@@ -197,7 +197,7 @@
 
         /* NOTE: このセクションに特有の部分 */
         content: url('../../images/silhouette_bird_04.svg');
-        left: -80px;
+        left: -96px;
         top: -16px;
       }
     }
@@ -276,7 +276,7 @@
 
         /* NOTE: このセクションに特有の部分 */
         content: url('../../images/silhouette_bird_05.svg');
-        left: -40px;
+        left: -32px;
         top: -16px;
       }
     }
@@ -294,7 +294,7 @@
   .instagram {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-sm);
+    gap: var(--space-xs);
     justify-content: center;
     margin-bottom: var(--space-lg);
     img {
