@@ -46,7 +46,7 @@ window.onload = function() {
 
   // Instagramデータ取得
   const data_url = new XMLHttpRequest();
-  const token = 'IGQWRQSGlWYjY4SzBPdW1UUHJWWnEtY1VBNm9wQlAxTEpuYkFpWEtSU3NXSk9EdWtKLXdNZAXZAFUnFmQlFRYmR6SlNhVTRUYVpSWjlITXhkeEJxNzhUSWE1d1Y0SWJNLTB3c3o2ZADBYdjVQUQZDZD';
+  const token = 'IGQWROaDJTNVVTVXFGcmd5YXM2YXpWa1N4QUpfaFdvOW1PTkVvTE9RUFlQb2NZAZAUUtLTBCbGFERUc3RGJ6UmVudUFZAbXA1NlZAFT1hDQ0lEaFRmbEtXV09QeFp2dVlvMlYwVFVSdlJNTVk1STAtUG9MSmtWY2hlRmUwSnh6R3MwdWN6ZAwZDZD';
   data_url.open('GET', `https://graph.instagram.com/me/media?fields=id,media_type,media_url,username,timestamp&access_token=${token}`);
   data_url.send();
   
