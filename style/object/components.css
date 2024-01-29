@@ -80,7 +80,7 @@
 
 h2, .h2 {
   font-family: ta-kotodama-r;
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   line-height: 1;
   margin-bottom: var(--space-md);
   text-align: center;
@@ -88,13 +88,14 @@ h2, .h2 {
     /* NOTE: gnavとほぼ同じcssを書いているので共通化したい */
     color: var(--color-primary-light);
     font-family: 'Gill Sans';
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-normal);
     font-weight: 900;
   }
 }
 
 h3, .h3 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
+  font-weight: 700;
   line-height: 1;
   margin-bottom: var(--space-sm);
   width: 100%;

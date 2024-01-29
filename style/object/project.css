@@ -89,7 +89,7 @@
 
       .copy {
         font-family: ta-kotodama-r;
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-xl);
 
         @media screen and (min-width: 768px) {
           font-size: var(--font-size-xxl);
