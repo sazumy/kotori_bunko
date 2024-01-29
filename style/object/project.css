@@ -178,6 +178,7 @@
   }
 
   .info {
+    margin: 0 var(--space-sm);
     margin-bottom: var(--space-md);
   }
 
