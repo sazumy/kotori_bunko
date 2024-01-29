@@ -120,6 +120,7 @@
     .section-title {
       display: inline-block;
       position: relative;
+      z-index: 0;
       &:before {
         /* NOTE: その他のセクションと共通の部分 */
         display: inline-block;
@@ -132,10 +133,76 @@
         top: -16px;
       }
     }
+  }
 }
+
+/* Voice */
+.voice {
+  .title-wrap {
+    text-align: center;
+    .section-title {
+      display: inline-block;
+      position: relative;
+      z-index: 0;
+      &:before {
+        /* NOTE: その他のセクションと共通の部分 */
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+
+        /* NOTE: このセクションに特有の部分 */
+        content: url('../../images/silhouette_bird_02.svg');
+        left: -80px;
+        top: -8px;
+      }
+    }
+  }
+}
+
+/* Access */
+.access {
+  .title-wrap {
+    text-align: center;
+    .section-title {
+      display: inline-block;
+      position: relative;
+      z-index: 0;
+      &:before {
+        /* NOTE: その他のセクションと共通の部分 */
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+
+        /* NOTE: このセクションに特有の部分 */
+        content: url('../../images/silhouette_bird_03.svg');
+        left: -80px;
+        top: -16px;
+      }
+    }
+  }
 }
 /* FAQ */
 .faq {
+  .title-wrap {
+    text-align: center;
+    .section-title {
+      display: inline-block;
+      position: relative;
+      z-index: 0;
+      &:before {
+        /* NOTE: その他のセクションと共通の部分 */
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+
+        /* NOTE: このセクションに特有の部分 */
+        content: url('../../images/silhouette_bird_04.svg');
+        left: -80px;
+        top: -16px;
+      }
+    }
+  }
+
    /* TODO: タブレットより大きいサイズでのテキストの配置に違和感があるので修正したい */
   .item {
     margin-bottom: var(--space-sm);
@@ -195,6 +262,26 @@
 
 /* Contact */
 .contact {
+  .title-wrap {
+    text-align: center;
+    .section-title {
+      display: inline-block;
+      position: relative;
+      z-index: 0;
+      &:before {
+        /* NOTE: その他のセクションと共通の部分 */
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+
+        /* NOTE: このセクションに特有の部分 */
+        content: url('../../images/silhouette_bird_05.svg');
+        left: -40px;
+        top: -16px;
+      }
+    }
+  }
+
   .info, .tel {
     text-align: center;
   }
