@@ -43,4 +43,30 @@ window.onload = function() {
 
   viewMoreBtn.addEventListener('click', viewMore);
   viewLessBtn.addEventListener('click', viewLess);
+
+  // Instagramデータ取得
+  const data_url = new XMLHttpRequest();
+  const token = 'IGQWRQSGlWYjY4SzBPdW1UUHJWWnEtY1VBNm9wQlAxTEpuYkFpWEtSU3NXSk9EdWtKLXdNZAXZAFUnFmQlFRYmR6SlNhVTRUYVpSWjlITXhkeEJxNzhUSWE1d1Y0SWJNLTB3c3o2ZADBYdjVQUQZDZD';
+  data_url.open('GET', `https://graph.instagram.com/me/media?fields=id,media_type,media_url,username,timestamp&access_token=${token}`);
+  data_url.send();
+  
+  data_url.onreadystatechange = () => {
+      if(data_url.readyState === 4 && data_url.status === 200) {
+        const responseJson = JSON.parse(data_url.responseText);
+        const igImages = responseJson.data;
+        // Instagram データ表示
+        const igField = document.getElementById('instagram-field');
+
+        igImages.map((img) => {
+          console.log(img)
+          const imgElement = document.createElement('img');
+          imgElement.src = img.media_url;
+          igField.appendChild(imgElement)
+        })
+        
+        
+      }
+  }
+
+  
 };
