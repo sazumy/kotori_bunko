@@ -82,14 +82,23 @@ h2, .h2 {
   font-family: ta-kotodama-r;
   font-size: var(--font-size-lg);
   line-height: 1;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xl);
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-size-xl);
+  }
+
   .en {
     /* NOTE: gnavとほぼ同じcssを書いているので共通化したい */
     color: var(--color-primary-light);
     font-family: 'Gill Sans';
     font-size: var(--font-size-normal);
     font-weight: 900;
+
+    @media screen and (min-width: 768px) {
+      font-size: var(--font-size-md);
+    }
   }
 }
 

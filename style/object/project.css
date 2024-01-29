@@ -113,6 +113,27 @@
   }
 }
 
+/* About */
+.about {
+  .title-wrap {
+    text-align: center;
+    .section-title {
+      display: inline-block;
+      position: relative;
+      &:before {
+        /* NOTE: その他のセクションと共通の部分 */
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+
+        /* NOTE: このセクションに特有の部分 */
+        content: url('../../images/silhouette_bird_01.svg');
+        left: -24px;
+        top: -16px;
+      }
+    }
+}
+}
 /* FAQ */
 .faq {
    /* TODO: タブレットより大きいサイズでのテキストの配置に違和感があるので修正したい */
