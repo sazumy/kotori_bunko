@@ -188,12 +188,12 @@
     justify-content: center;
     margin-bottom: var(--space-lg);
     img {
-      height: 160px;
-      width: 160px;
+      --img-size: 160px;
+      height: var(--img-size);
+      width: var(--img-size);
 
       @media screen and (min-width: 768px) {
-        height: 200px;
-      width: 200px;
+        --img-size: 200px;
       }
     }
   }
