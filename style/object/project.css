@@ -265,7 +265,13 @@
       display: block;
     }
   }
-
+  .viewmore__text {
+    padding: 8px;
+    &:hover {
+      background-color: var(--color-base-lightest);
+      mix-blend-mode: multiply;
+    }
+  }
   .viewless {
     img {
       transform: rotate(180deg);

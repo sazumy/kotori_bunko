@@ -125,6 +125,7 @@ h3, .h3 {
 }
 
 .link-inline {
+  /* テキスト本文中のリンク */
   padding: var(--space-xxs);
   text-decoration: underline;
   &:hover {
