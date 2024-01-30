@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - run: |
-          echo '<script async="" src="https://maps.googleapis.com/maps/api/js?key=${{ secrets.GOOGLE_MAP_API_KEY }};callback=console.debug&amp;libraries=maps,marker&amp;v=beta"></script>' >> index.html 
+          echo '<script async="" src="https://maps.googleapis.com/maps/api/js?key=${{ secrets.GOOGLE_MAP_API_KEY }}&callback=console.debug&amp&libraries=maps,marker&amp&v=beta"></script>' >> index.html 
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
