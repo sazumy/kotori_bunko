@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ことり文庫 | 絵本だけの小さな図書館</title>
+
+  <meta name="description" content="JR南武線〇〇駅にある絵本だけの小さな図書館です。おひとり様３冊まで貸し出し可能。毎週水曜日の14時から17時まで開館しています。どなたでもお気軽にご利用ください。">
+  <link rel="stylesheet" type="text/css" href="./style/main.css">
+  <script type="module" src="./js/modules.js"></script>
+</head>
+<body>
+  <article>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">
+          <img src="./images/logo.svg" alt="神奈川県川崎市にある絵本だけの小さな図書館、ことり文庫">
+        </h1>
+        <div class="right-content">
+          <div class="gnav-dropdown-btn" id="js-gnav-btn">
+            <img src="./images/icon_menu.svg" alt="メニューアイコン">
+          </div>
+
+          <nav class="gnav" id="js-gnav-sp">
+            <div class="gnav-close-btn" id="js-gnav-close-btn">
+              <img src="./images/icon_close.svg" alt="閉じるアイコン">
+            </div>
+
+            <ul class="list">
+              <li class="list__item">
+                <a href="#" class="list__item--link">
+                  ホーム<br>
+                  <span class="en">Home</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#about" class="list__item--link">
+                  私たちについて<br>
+                  <span class="en">About</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#faq" class="list__item--link">
+                  よくある質問<br>
+                  <span class="en">FAQ</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#contact" class="list__item--link">
+                  お問合せ<br>
+                  <span class="en">Contact</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="icons">
+              <li class="list__item">
+                <a href="https://www.instagram.com/kotoribunko0216/" target="_blank" class="instagram">
+                  <img src="./images/icon_instagram_color.svg" alt="インスタグラムアイコン">
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="tel:+8100000000" class="tel">
+                  <img src="./images/icon_tel.svg" alt="電話のアイコン">
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        <!-- PC用 -->
+          <nav class="gnav pc">
+            <ul class="list">
+              <li class="list__item">
+                <a href="#" class="list__item--link">
+                  ホーム<br>
+                  <span class="en">Home</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#about" class="list__item--link">
+                  私たちについて<br>
+                  <span class="en">About</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#faq" class="list__item--link">
+                  よくある質問<br>
+                  <span class="en">FAQ</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#contact" class="list__item--link">
+                  お問合せ<br>
+                  <span class="en">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="keyvis">
+      <div class="eye-catch">
+        <div class="rough-circle">
+          <p class="copy">
+            絵本だけの<br>小さな図書館
+          </p>
+        </div>
+        <div class="rough-circle-shadow"></div>
+      </div>
+      <img src="./images/arrow_scroll.svg" alt="スクロールを促す矢印" class="arrow_scroll">
+      <span class="scroll-sign"></span>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="title-wrap">
+          <h2 class="section-title h2" id="about">
+            私たちがしていること<br>
+            <span class="en">About</span>
+          </h2>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card__img">
+              <img src="./images/about_img_books.jpg" alt="３冊の本">
+            </div>
+            <h3 class="card__title">
+              絵本の貸し出し
+            </h3>
+            <p class="card__content">
+              おひとり様１回３冊まで絵本をお貸し出ししています。期間は２週間です。貸し出し期間内の返却が難しい場合には建物内の返却ボックスにご返却ください。
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="./images/about_img_parent_and_child.jpg" alt="本棚の前にいる親子">
+            </div>
+            <h3 class="card__title">
+              親子の憩いの場
+            </h3>
+            <p class="card__content">
+              文庫内にはプレイマットが敷いてあり、さまざまなおもちゃがあります。小さなお子様用にオムツ替えシートもご用意しています。お茶やコーヒーでお寛ぎください。
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="./images/about_img_children.png" alt="笑う子供たち">
+            </div>
+            <h3 class="card__title">
+              さまざまなイベント
+            </h3>
+            <p class="card__content">
+              読み聞かせ会や季節に合わせたイベントを不定期で開催しています。過去にはおもちゃコンシェルジュによる木のおもちゃ体験会や、お餅つき大会なども開催しました。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="voice">
+      <div class="container">
+        <div class="title-wrap">
+          <h2 class="section-title h2" id="voice">
+            利用された方の声<br>
+            <span class="en">Voice</span>
+          </h2>
+        </div>
+        <div class="cards long">
+          <div class="card">
+            <div class="card__img rough-circle">
+              <img src="./images/voice_woman.png" alt="">
+            </div>
+            <div class="card__contents">
+              <h3 class="h3 border title">
+                30代、女性
+              </h3>
+              <p class="text">
+                もうすぐ一才になる息子と共にいつもお邪魔しています。おもちゃもたくさんあって本を選ぶ間子どもも退屈しません。本を迷っていると奥様が図書を推薦してくださるのでとても助かっています。大人が子どもと楽しく遊ぶための本もあって嬉しいです。
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img rough-circle">
+              <img src="./images/voice_man.png" alt="">
+            </div>
+            <div class="card__contents">
+              <h3 class="h3 border title">
+                30代、男性
+              </h3>
+              <p class="text">
+                いつも妻と娘が本を貸していただいています。僕はもっぱら家で読み聞かせる専門なのですが、この間土曜日に行われた餅つき大会に一家で参加しました。杵つきのお餅なんて滅多に食べられないので、娘も親も貴重な経験となりました。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="access">
+      <div class="container">
+        <div class="title-wrap">
+          <h2 class="section-title h2" id="access">
+            ことり文庫への行き方<br>
+            <span class="en">Access</span>
+          </h2>
+          <div class="info">
+            <p>開館時間：水曜日 14:00-17:00</p>
+            <p>JR南武線〇〇駅から徒歩3分。トンカツ屋さんの向かい、△△寺の境内です。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map">
+        <gmp-map center="35.57247543334961,139.66781616210938" zoom="16" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="35.57247543334961,139.66781616210938" title="My location"></gmp-advanced-marker>
+        </gmp-map>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="title-wrap">
+          <h2 class="section-title h2" id="faq">
+            よくある質問<br>
+            <span class="en">FAQ</span>
+          </h2>
+        </div>
+        <div class="items">
+          <div class="item">
+            <p class="question">
+              <span class="icon">Q</span>
+              <span class="text">一度に何冊まで借りられますか？</span>
+            </p>
+            <p class="answer">
+              <span class="icon">A</span>
+              <span class="text">おひとり様３冊まで本をお貸し出しています。</span>
+            </p>
+          </div>
+          <div class="item">
+            <p class="question">
+              <span class="icon">Q</span>
+              貸出期間はどのくらいですか？
+            </p>
+            <p class="answer">
+              <span class="icon">A</span>
+              ２週間です。
+            </p>
+          </div>
+          <div class="item">
+            <p class="question">
+              <span class="icon">Q</span>
+              開館時間はいつですか？
+            </p>
+            <p class="answer">
+              <span class="icon">A</span>
+              毎週水曜日の14:00-17:00です。詳細はInstagramをご確認ください。
+            </p>
+          </div>
+
+          <!-- ここから先、通常だと隠れているコンテンツ -->
+          
+          <div class="hidden-content" id="js-hidden-content">
+            <div class="item">
+              <p class="question">
+                <span class="icon">Q</span>
+                開館時間に返却に来られないときはどうすれば良いですか？
+              </p>
+              <p class="answer">
+                <span class="icon">A</span>
+                事務室内の返却ボックスにお返しください。
+              </p>
+            </div>
+          </div>
+          
+          <p class="viewmore show" id="js-view-more-btn">
+            <span class="viewmore__text">
+              <img src="./images/icon_arrow_down.svg" alt="矢印のアイコン">
+              もっと見る
+            </span>
+          </p>
+        </div>
+
+        <p class="viewless" id="js-view-less-btn">
+          <span class="viewmore__text">
+            <img src="./images/icon_arrow_down.svg" alt="">
+            少なく表示
+          </span>
+        </p>
+      </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="title-wrap">
+          <h2 class="section-title h2" id="contact">
+            お問合せ・SNS<br>
+            <span class="en">contact</span>
+          </h2>
+        </div>
+        <p class="info">
+          お問合せは
+          <a class="link-inline" href="https://www.instagram.com/kotoribunko0216/" target="_blank">
+            InstagramのDM
+          </a>
+          またはお電話にてお願いいたします。
+        </p>
+        <div class="instagram" id="instagram-field">
+          <!-- この中にInstagramのデータを描画します -->
+        </div>
+        <div class="tel">
+          <p class="number">
+            044-1234-5678
+          </p>
+          <p class="office-hour">
+            〇〇寺事務室： 9:00~17:00
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="main-info">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="ことり文庫">
+          </div>
+          <nav class="footer-nav">
+            <ul class="list">
+              <li class="list-item">
+                <a href="#">トップ</a>
+              </li>
+              <li class="list-item">
+                <a href="#about">私たちがしていること</a>
+              </li>
+              <li class="list-item">
+                <a href="#voice">利用者さんの声</a>
+              </li>
+              <li class="list-item">
+                <a href="#faq">よくある質問</a>
+              </li>
+              <li class="list-item">
+                <a href="#contact">お問合せ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contact-info">
+            <p class="address">
+              <span class="postal-code">
+                &#12306; &nbsp; 211-0012 <br>
+              </span>
+              神奈川県川崎市△△区〇〇町1-2-3
+            </p>
+            <ul class="icons">
+              <li class="list__item">
+                <a href="https://www.instagram.com/kotoribunko0216/" target="_blank" class="instagram">
+                  <img src="./images/icon_instagram_br.svg" alt="">
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="tel:+8100000000">
+                  <img src="./images/icon_tel_br.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copy">
+          <small>&copy; kotori-bunko</small>
+        </p>
+      </div>
+    </footer>
+  </article>
+</body>
+</html>
+
