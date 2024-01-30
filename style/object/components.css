@@ -124,6 +124,15 @@ h3, .h3 {
   }
 }
 
+.link-inline {
+  padding: var(--space-xxs);
+  text-decoration: underline;
+  &:hover {
+    background-color: var(--color-base-lightest);
+    mix-blend-mode: multiply;
+  }
+}
+
 .rough-circle {
   /* ぐにゃぐにゃした丸い円 */
   background: var(--color-secondary);

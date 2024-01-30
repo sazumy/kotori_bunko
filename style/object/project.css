@@ -41,14 +41,27 @@
           font-size: var(--font-size-sm);
           font-weight: 900;
         }
-  
+        
         .list__item--link {
           border-bottom: solid 1px var(--color-base-lightest);
           display: block;
           padding: var(--space-sm);
-  
+          text-decoration: none;
+
           &:hover {
             background-color: var(--color-base-lightest);
+            position: relative;
+
+            &:after {
+              bottom: 0;
+              content: '';
+              background: var(--color-primary-light);
+              display: block;
+              height: 2px;
+              left: 0;
+              position: absolute;
+              width: 100%;
+            }
           }
         }
       }
