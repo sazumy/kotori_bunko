@@ -136,24 +136,32 @@ h3, .h3 {
 
 /* もっと見るボタンとその周辺 */
 .hidden-content {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .3s linear;
   &.show {
-    display: block;
+    max-height: 100vh;
   }
 }
 
 .viewmore, .viewless {
-  display: none;
   /* TODO: アイコンとテキストがずれているので直したい */
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
   position: relative;
   text-align: center;
+  transition: opacity .3s ease-out;
   img {
     margin-right: 4px;
   }
   &.show {
     display: block;
+    height: auto;
+    opacity: 1;
   }
 }
+
 .viewmore__text {
   padding: 8px;
   &:hover {
@@ -161,6 +169,7 @@ h3, .h3 {
     mix-blend-mode: multiply;
   }
 }
+
 .viewless {
   img {
     transform: rotate(180deg);
