@@ -6,4 +6,4 @@ import { showIgMedia } from "./components/showIgMedia.js";
 runAdobeFont(document);
 openAndCloseGnav();
 viewMoreAndLess();
-
+// NOTE: showIdMediaはGithubアクションズの中で追記される。（トークンを直接コードに書けないため）
