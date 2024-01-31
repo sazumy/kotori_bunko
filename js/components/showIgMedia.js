@@ -1,9 +1,11 @@
-export const showIgMedia = () => {
+export const showIgMedia = (igToken) => {
   // Instagramデータ取得
   const data_url = new XMLHttpRequest();
-  // TODO: 環境変数などで管理しないと、Facebookによってトークンは無効化されてしまう。
-  const token = 'IGQWRQbmk2YTFvLVNmbjhYWE56bloyb1Q1UkhlQjVpM2doOEhQZAWdEWlZAYZAzV1aVRZAYWR0SjVtZA2VDMVJlNW5pOFNHWHctR2JyVHBYTFJhaWs0WjZA1NTh1bk1VUmtEN2F6SUlmU1hmZAHQwalplWkVQQ2xvaG5ZASzliSnZAudWtmWEROUQZDZD';
-  data_url.open('GET', `https://graph.instagram.com/me/media?fields=id,media_type,media_url,username,timestamp&access_token=${token}`);
+  const igRequestUrl = `https://graph.instagram.com/me/media?
+                        fields=id,media_type,media_url,username,timestamp
+                        &access_token=${igToken}`
+  
+  data_url.open('GET', igRequestUrl);
   data_url.send();
   
   data_url.onreadystatechange = () => {

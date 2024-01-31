@@ -32,14 +32,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - run: |
-          echo '<script async="" src="https://maps.googleapis.com/maps/api/js?key=${{ secrets.GOOGLE_MAP_API_KEY }}&callback=console.debug&amp&libraries=maps,marker&amp&v=beta"></script>' >> index.html 
+          echo '<script async="" src="https://maps.googleapis.com/maps/api/js?key=${{ secrets.GOOGLE_MAP_API_KEY }}&callback=console.debug&amp&libraries=maps,marker&amp&v=beta"></script>' >> index.html
+      - run: |
+          echo 'showIgMedia(${{ secrets.INSTAGRAM_ACCESS_TOKEN_20240131 }});' >> js/modules.js
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: '.'
+          path: "."
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
