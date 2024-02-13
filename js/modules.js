@@ -7,3 +7,7 @@ runAdobeFont(document);
 openAndCloseGnav();
 viewMoreAndLess();
 // NOTE: showIdMediaはGithubアクションズの中で追記される。（トークンを直接コードに書けないため）
+
+const igField = document.getElementById('js-instagram-field');
+const testHTML = `<p>これはテストです</p>`
+    igField.append(testHTML);

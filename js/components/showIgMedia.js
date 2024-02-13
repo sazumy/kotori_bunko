@@ -13,13 +13,14 @@ export const showIgMedia = (igToken) => {
       const responseJson = JSON.parse(data_url.responseText);
       const igImages = responseJson.data;
       // Instagram データ表示
-      const igField = document.getElementById('instagram-field');
+      const igField = document.getElementById('js-instagram-field');
 
       igImages.map((img) => {
         const imgElement = document.createElement('img');
         imgElement.src = img.media_url;
-        igField.appendChild(imgElement)
+        igField.appendChild(imgElement);
       })
+      
     }
   }
 }
