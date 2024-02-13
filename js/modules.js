@@ -9,11 +9,6 @@ viewMoreAndLess();
 
 
 // jQueryのコード仮置き
-$(function(){
-    // DEV環境の時はここにtokenを入れる（そのうち.envにする）
-    // showIgMedia(token)
-});
-
 const showIgMedia = (igToken) => {
     // Instagramデータ取得
     const data_url = new XMLHttpRequest();
