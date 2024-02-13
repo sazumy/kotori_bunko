@@ -11,7 +11,7 @@ viewMoreAndLess();
 // jQueryのコード仮置き
 $(function(){
     // DEV環境の時はここにtokenを入れる（そのうち.envにする）
-    showIgMedia(token)
+    // showIgMedia(token)
 });
 
 const showIgMedia = (igToken) => {
@@ -29,10 +29,12 @@ const showIgMedia = (igToken) => {
     data_url.onreadystatechange = () => {
         if(data_url.readyState === 4 && data_url.status === 200) {
             const responseJson = JSON.parse(data_url.responseText);
-            const igImages = responseJson.data;
+            const displayDataCount = 8;
+            const igImages = responseJson.data.slice(-1 * displayDataCount);
+
             // Instagram データ表示
             igImages.map((img) => {
-                let html = `<a href="${img.permalink}" class="ig-img-wrap">
+                let html = `<a href="${img.permalink}" target="_blank" class="ig-img-wrap">
                                 <img src="${img.media_url}" />
                             </a>`
 
