@@ -284,13 +284,20 @@
     gap: var(--space-xs);
     justify-content: center;
     margin-bottom: var(--space-lg);
-    img {
+    .ig-img-wrap {
       --img-size: 160px;
       height: var(--img-size);
       width: var(--img-size);
 
       @media screen and (min-width: 768px) {
         --img-size: 200px;
+      }
+
+      &:hover {
+        opacity: .3;
+      }
+      img {
+        max-width: 100%;
       }
     }
   }

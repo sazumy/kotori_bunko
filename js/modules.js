@@ -18,7 +18,7 @@ const showIgMedia = (igToken) => {
     // Instagramデータ取得
     const data_url = new XMLHttpRequest();
     const igRequestUrl = `https://graph.instagram.com/me/media?
-                          fields=id,media_type,media_url,username,timestamp
+                          fields=id,media_type,media_url,permalink,username,timestamp
                           &access_token=${igToken}`;
 
     data_url.open('GET', igRequestUrl);
@@ -32,9 +32,9 @@ const showIgMedia = (igToken) => {
             const igImages = responseJson.data;
             // Instagram データ表示
             igImages.map((img) => {
-                let html = `<dev>
+                let html = `<a href="${img.permalink}" class="ig-img-wrap">
                                 <img src="${img.media_url}" />
-                            </dev>`
+                            </a>`
 
             $igField.append(html);
         })
