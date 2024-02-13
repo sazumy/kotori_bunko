@@ -20,7 +20,7 @@ const showIgMedia = (igToken) => {
     data_url.send();
                           
     const $igField= $("#js-instagram-field");
-    console.log("実行されました")
+
     data_url.onreadystatechange = () => {
         if(data_url.readyState === 4 && data_url.status === 200) {
             const responseJson = JSON.parse(data_url.responseText);
