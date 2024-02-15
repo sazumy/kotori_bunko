@@ -1,0 +1,24 @@
+name: remote ssh command
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+        - run: |
+            echo '<script async="" src="https://maps.googleapis.com/maps/api/js?key=${{ secrets.GOOGLE_MAP_API_KEY }}&callback=console.debug&amp&libraries=maps,marker&amp&v=beta"></script>' >> index.html
+        - run: |
+            echo 'const token = "${{ secrets.INSTAGRAM_ACCESS_TOKEN_20240131 }}"; showIgMedia(token);' >> js/modules.js
+
+        - name: executing remote ssh commands using password
+          uses: appleboy/ssh-action@master
+          with:
+            host: ${{ secrets.SAKURA_HOST }}
+            username: ${{ secrets.SAKURA_USERNAME }}
+            password: ${{ secrets.SAKURA_SERVER_PASS }}
+            script: |
+              cd ${{ secrets.SERVER_DEPLOY_DIR }}
+              git pull origin main
