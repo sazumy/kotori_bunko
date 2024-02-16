@@ -1,5 +1,5 @@
 name: remote ssh command
-# on: [push] NOTE: 現在修正中で使わないアクションなので、停止しておく
+# on: [push] NOTE: 現在修正中で使わないアクションなので、停止しておく。修正・実行したいときは .github/workflows配下に置く
 jobs:
   build:
     name: Build
