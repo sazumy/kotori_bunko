@@ -10,7 +10,7 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-          host: sazumyy.sakura.ne.jp
+          host: ${{ secrets.SAKURA_HOST }}
           username: sazumyy
           password: 9+AG.d9C2PH2
           #TODO: このコマンドだと延々とキーがファイルに書き込まれてしまう上に、想定通り動作しないので修正したい
