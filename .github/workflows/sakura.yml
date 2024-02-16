@@ -19,5 +19,5 @@ jobs:
           username: sazumyy
           password: 9+AG.d9C2PH2
           script: |
-            cd ${{ secrets.SERVER_DEPLOY_DIR }}
+            cd /home/sazumyy/www/kotori_bunko
             git pull origin main
