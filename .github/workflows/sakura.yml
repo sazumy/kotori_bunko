@@ -1,5 +1,5 @@
 name: remote ssh command
-on: [push]
+# on: [push] NOTE: 現在修正中で使わないアクションなので、停止しておく
 jobs:
   build:
     name: Build
