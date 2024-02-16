@@ -7,11 +7,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - run: |
-          echo '<script async="" src="https://maps.googleapis.com/maps/api/js?key=${{ secrets.GOOGLE_MAP_API_KEY }}&callback=console.debug&amp&libraries=maps,marker&amp&v=beta"></script>' >> index.html
-      - run: |
-          echo 'const token = "${{ secrets.INSTAGRAM_ACCESS_TOKEN_20240131 }}"; showIgMedia(token);' >> js/modules.js
-
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
@@ -21,3 +16,5 @@ jobs:
           script: |
             cd /home/sazumyy/www/kotori_bunko
             git pull origin main
+            echo '<script async="" src="https://maps.googleapis.com/maps/api/js?key=${{ secrets.GOOGLE_MAP_API_KEY }}&callback=console.debug&amp&libraries=maps,marker&amp&v=beta"></script>' >> index.html
+            echo 'const token = "${{ secrets.INSTAGRAM_ACCESS_TOKEN_20240131 }}"; showIgMedia(token);' >> js/modules.js
