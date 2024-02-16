@@ -9,10 +9,11 @@ jobs:
         uses: actions/checkout@v4
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
+        # TODO: シークレットがベタがきでないとアクションが失敗してしまうので、修正したい
         with:
-          host: "${{ secrets.SAKURA_HOST }}"
+          host: sazumyy.sakura.ne.jp
           username: sazumyy
-          password: 9+AG.d9C2PH2
+          password: "${{ secrets.SAKURA_SERVER_PASS }}"
           #TODO: このコマンドだと延々とキーがファイルに書き込まれてしまう上に、想定通り動作しないので修正したい
           script: |
             cd /home/sazumyy/www/kotori_bunko
