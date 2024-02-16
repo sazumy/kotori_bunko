@@ -15,9 +15,9 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.SAKURA_HOST }}
-          username: ${{ secrets.SAKURA_USERNAME }}
-          password: ${{ secrets.SAKURA_SERVER_PASS }}
+          host: sazumyy.sakura.ne.jp
+          username: sazumyy
+          password: 9+AG.d9C2PH2
           script: |
             cd ${{ secrets.SERVER_DEPLOY_DIR }}
             git pull origin main
