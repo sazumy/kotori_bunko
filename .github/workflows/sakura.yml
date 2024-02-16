@@ -13,6 +13,7 @@ jobs:
           host: sazumyy.sakura.ne.jp
           username: sazumyy
           password: 9+AG.d9C2PH2
+          #TODO: このコマンドだと延々とキーがファイルに書き込まれてしまう上に、想定通り動作しないので修正したい
           script: |
             cd /home/sazumyy/www/kotori_bunko
             git pull origin main
